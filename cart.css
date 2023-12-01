@@ -1,0 +1,108 @@
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: black;
+        }
+
+        .container {
+            background-color: #fff;
+            margin: auto;
+            width: 50%;
+            height: 100%;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 5px;
+        }
+
+        .iphone {
+            background-color: #fff;
+            display: block;
+            justify-content: center;
+            margin: 20px;
+            margin-right: 40px;
+        }
+
+        .realme {
+            background-color: #fff;
+            display: block;
+            justify-content: center;
+            margin: 20px;
+            margin-right: 40px;
+        }
+
+        .ipad {
+            background-color: #fff;
+            display: block;
+            justify-content: center;
+            margin: 10px;
+            margin-right: 40px;
+        }
+
+        .samsung {
+            background-color: #fff;
+            display: block;
+            justify-content: center;
+            margin: 10px;
+            margin-right: 40px;
+        }
+
+        .vivo {
+            background-color: #fff;
+            display: block;
+            justify-content: center;
+            margin: 10px;
+            margin-right: 40px;
+        }
+
+        .redmi {
+            background-color: #ffffff;
+            display: block;
+            justify-content: center;
+            margin: 10px;
+
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: rgb(47, 85, 92);
+        }
+
+        h1 {
+            background-color: #fff;
+            width: 100%;
+            padding-left: 10px;
+        }
+
+        h2 {
+            font-size: 15px;
+            color: rgb(26, 97, 102);
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5px;
+        }
+
+        h4 {
+            font-size: 14px;
+            color: rgb(75, 72, 72);
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5px;
+        }
+
+        span {
+            color: rgb(88, 89, 90);
+            background-color: #fff;
+        }
+
+        button {
+            background: yellow;
+            padding: 5px 40px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+        }
