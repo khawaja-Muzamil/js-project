@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            overflow: hidden;
+        }
+        h1{
+            position: absolute;
+            top: 5em;
+            margin-bottom: 1em;
+            color: yellow;
+        }
+        .container{
+            font-size: 10px;
+            width: 40em;
+            height: 40em;
+            position: relative;
+            background:rgb(77, 76, 76);
+            border-radius: 50%;
+        }
+        .sun{
+            position: absolute;
+            top: 15em;
+            left: 15em;
+            width: 10em;
+            height: 10em;
+            background-color: yellow;
+            border-radius: 50%;
+            box-shadow: 0 0 3em rgb(197, 172, 59);
+        }
+        .earth, .moon{
+            position: absolute;
+            border-style: solid;
+            background-color:white transparent transparent transparent;
+            border-width: 0.1em 0.1em 0 0;
+            border-radius: 50%;
+        }
+        .earth{
+            top: 5em;
+            left: 5em;
+            width: 30em;
+            height: 30em;
+            animation: orbit 36.5s linear infinite;
+        }
+        .moon{
+            top: 0;
+            right: 0;
+            width: 8em;
+            height: 8em;
+            animation: orbit 2.7s linear infinite;
+        }
+        .earth::before, .moon::before{
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+        }
+        .earth::before{
+            top: 2.8em;
+            right: 2.8em;
+            width: 3em;
+            height: 3em;
+            background-color: rgb(56, 124, 71);
+        }
+        .moon::before{
+            top: 0.8em;
+            right: 0.2em;
+            width: 1.2em;
+            height: 1.2em;
+            background-color: silver;
+        }
+        p{
+            position: absolute;
+            top: 1em;
+            right: 1em;
+            font-size: 3em;
+            color: rgb(235, 230, 229);
+        }
+        span{
+            font-size: 3em;
+            color: rgb(238, 76, 27);
+            position: absolute;
+            top: 1em;
+            left: 0.8em;
+ 
+        }
+        @keyframes orbit {
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>SOLAR SYSTEM</h1>
+    <div class="container">
+        <div class="sun"><span>SUN</span></div>
+        <div class="earth"><p>E</p>
+            <div class="moon"><p>M</p></div>
+        </div>
+    </div>
+</body>
+</html>
